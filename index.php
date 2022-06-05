@@ -5,28 +5,39 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PHP DATING</title>
-</head>
+<?php include('./shared/head.php') ?>
 <body>
 
-<!-- HEADER -->
-<?php include('./shared/header.php') ?>
+<div class="container">
 
-<form action="" method="POST">
-  <label for="email">Votre email :</label>
-  <input type="text" name="email" id="email">
+  <!-- HEADER -->
+  <?php
+  include('./shared/header.php');
+  include('./shared/navbar.php');
+  ?>
 
-  <button type="submit">Valider</button>
+<h2 class="page-title">Accueil</h2>
 
-  <a href="inscription.php">Pas encore inscrit ?</a>
-</form>
+  <!-- Liste des sports existants dans la base à afficher -->
+  <!-- ??????????????????????????????????????? -->
 
-<!-- FOOTER -->
-<?php include('./shared/footer.php') ?>
+  <!-- Formulaire d'identification -->
+  <form class="login-form" action="" method="POST">
+    <h3 class="form-title">-Identifiez-vous-</h3>
+
+    <div class="form-fields">
+      <label class="form-label" for="email">Votre email :</label>
+      <input class="form-input" type="text" name="email" id="email" placeholder="Entrez votre email">
+  
+      <button class="form-submit-btn" type="submit">Valider</button>
+      <a class="form-inscription-link" href="inscription.php">Pas encore inscrit ?</a>
+    </div>
+  </form>
+
+  <!-- FOOTER -->
+  <?php include('./shared/footer.php'); ?>
+
+</div>
   
 </body>
 </html>

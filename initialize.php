@@ -7,7 +7,7 @@
     try
     {
       $dataBase = new PDO($connexion, USER, PASS);
-      echo 'Success !!';
+      // echo 'Success !!';
       return $dataBase;
     }
     catch (PDOException $except)

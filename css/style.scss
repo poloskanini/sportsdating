@@ -1,0 +1,132 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap');
+
+body, html {
+  height: 100%;
+  font-family: 'Graduate', cursive;
+}
+
+body {
+  text-align: center;
+  background-image: url(../assets/132330196_m.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+.container {
+  min-height: 100%;
+  position: relative;
+}
+
+header,
+footer {
+  background-color: #000;
+  color: #FFF;
+  min-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+header {
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  // border-bottom: 1px solid #FFF;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid white;
+  background-color: #000;
+}
+
+.page-title {
+  color: #FFF;
+  margin: .6em 0;
+}
+
+.login-form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFF;
+  width: 300px;
+  max-width: 400px;
+  border-radius: 5px;
+  background:rgba(255, 255, 255, 0.9);
+  padding: 30px;
+}
+
+.form-title {
+  font-size: 1.2em;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-fields > * {
+  align-self: center;
+}
+
+.form-label {
+  font-weight: 600;
+  padding: 20px 0 5px;
+}
+
+.form-input {
+  -webkit-appearance: none;
+  width: 100%;
+  max-width: 425px;
+  min-height: calc(0.9em + (0.8em *2)+ 0.6em);
+  padding: 0.8em;
+  font-size: 0.9em;
+  text-align: center;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: background-color 0.25s, border-color 0.25s, color 0.25s;
+}
+
+.form-input::placeholder {
+  color: rgb(152, 151, 151);
+}
+
+.form-submit-btn {
+  font-weight: bold;
+  font-family: 'Graduate';
+  font-size: 1.1em;
+  padding: 10px 16px;
+  margin: 10px 0;
+  color: #FFF;
+  background-color: #1419b6;
+  border: 2px solid rgba(7, 1, 77, 0.6);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-inscription-link {
+  font-size: .8em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: .8rem;
+}

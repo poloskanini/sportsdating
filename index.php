@@ -13,10 +13,20 @@
 </head>
 <body>
 
-<footer>
-  <p>Copyright ©</p>
-  <?php echo date('Y')?>
-</footer>
+<!-- HEADER -->
+<?php include('./shared/header.php') ?>
+
+<form action="" method="POST">
+  <label for="email">Votre email :</label>
+  <input type="text" name="email" id="email">
+
+  <button type="submit">Valider</button>
+
+  <a href="inscription.php">Pas encore inscrit ?</a>
+</form>
+
+<!-- FOOTER -->
+<?php include('./shared/footer.php') ?>
   
 </body>
 </html>

@@ -101,7 +101,7 @@
             <div class="block">
               <label class="form-label" for="newsport">Ajouter un sport :</label>
               <input class="form-input" type="text" name="newsport" id="newsport" placeholder="Nouveau sport">
-              <button class="form-submit-btn btn-green" type="submit">Ajouter</button>
+              <button class="btn btn-green" type="submit">Ajouter</button>
             </div>
 
             <!-- Sport level -->
@@ -123,8 +123,8 @@
         <!-- Reinitialiser / Valider -->
         <div class="form-fields-inscription">
 
-          <button class="form-submit-btn btn-red" type="submit">Réinitialiser</button>
-          <button class="form-submit-btn" type="submit">Valider</button>
+          <button class="btn btn-red" type="submit">Réinitialiser</button>
+          <button class="btn btn-blue" type="submit">Valider</button>
         
         </div>
 

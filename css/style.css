@@ -34,7 +34,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 1rem 0 0;
 }
 
 footer {
@@ -67,13 +67,14 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-bottom: 1px solid white;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .nav-item {
   color: #FFF;
   margin: .6em 0;
   font-size: clamp(0.8rem, 0.7vw, 2rem);
+  padding: 1rem;
 }
 
 .page-title-active {
@@ -164,27 +165,47 @@ nav {
   color: #989797;
 }
 
-.form-submit-btn {
+.btn {
   font-weight: bold;
   font-family: 'Graduate';
-  font-size: 1.1em;
+  font-size: 1rem;
   padding: 10px 16px;
   margin: 10px 0;
-  color: #FFF;
-  background-color: #1419b6;
-  border: 2px solid rgba(7, 1, 77, 0.6);
   border-radius: 5px;
   cursor: pointer;
 }
 
+.btn:hover {
+  background-position: 200px 0;
+  color: #FFF;
+}
+
+.btn-blue {
+  background: -webkit-linear-gradient(0deg, transparent 50%, #1419b6 50%);
+  background-size: 400px 80px;
+  border: 2px solid #1419b6;
+  color: #1419b6;
+  -webkit-transition: background-position 0.3s;
+  transition: background-position 0.3s;
+}
+
 .btn-green {
-  background-color: #4d8e18;
-  font-size: 1rem;
+  background: -webkit-linear-gradient(0deg, transparent 50%, #4d8e18 50%);
+  background-size: 400px 80px;
+  border: 2px solid #4d8e18;
+  color: #4d8e18;
+  -webkit-transition: background-position 0.3s;
+  transition: background-position 0.3s;
 }
 
 .btn-red {
   background-color: #8e3218;
-  font-size: 1rem;
+  background: -webkit-linear-gradient(0deg, transparent 50%, #8e3218 50%);
+  background-size: 400px 80px;
+  border: 2px solid #8e3218;
+  color: #8e3218;
+  -webkit-transition: background-position 0.3s;
+  transition: background-position 0.3s;
 }
 
 .form-inscription-link {

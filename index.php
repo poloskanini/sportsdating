@@ -25,8 +25,9 @@
       <div class="form-fields">
         <label class="form-label" for="email">Votre email :</label>
         <input class="form-input" type="text" name="email" id="email" placeholder="Entrez votre email">
-    
-        <button class="form-submit-btn" type="submit">Valider</button>
+
+        <!-- Button Validate -->
+        <button class="btn btn-blue" type="submit">Valider</button>
         <a class="form-inscription-link" href="inscription.php">Pas encore inscrit ?</a>
       </div>
     </form>

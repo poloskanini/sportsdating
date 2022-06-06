@@ -8,18 +8,20 @@
 <?php include('./shared/head.php') ?>
 <body>
 
-<div class="container">
+  <div class="container">
 
-  <!-- HEADER -->
-  <?php
-  include('./shared/header.php');
-  include('./shared/navbar.php');
-  ?>
+    <!-- HEADER -->
+    <?php
+    include('./shared/header.php');
+    include('./shared/navbar.php');
+    ?>
+
+  </div>
 
   <!-- FOOTER -->
   <?php include('./shared/footer.php'); ?>
 
 </div>
-  
+
 </body>
 </html>

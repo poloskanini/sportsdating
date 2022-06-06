@@ -9,24 +9,39 @@
 <?php include('./shared/head.php') ?>
 <body>
 
+  <div class="container">
   <!-- HEADER -->
   <?php
   include('./shared/header.php');
   include('./shared/navbar.php');
   ?>
 
-  <div class="inscription-container">
 
     <div class="inscription-wrapper">
       <h2 class="page-title-active">Inscription</h2>
 
-      <form class="inscription-form" action="inscription.php" method="POST">
+      <form class="inscription-form form" action="inscription.php" method="POST">
 
+        <!-- Form Fields Inscription -->
         <div class="form-fields-inscription">
 
           <!-- Civilité -->
           <h3 class="form-title">-Civilité-</h3>
+
           <div class="form-fields-block form-fields-civility">
+
+            <!-- Gender -->
+            <div class="gender">
+              <div class="miss">
+                <input type="radio" id="miss" name="gender" value="Mme">
+                <label for="huey">Mme</label>
+              </div>
+              <div class="mister">
+                <input type="radio" id="mister" name="gender" value="Mr">
+                <label for="huey">Mr</label>
+              </div>
+            </div>
+
             <!-- Firstname -->
             <div class="block">
               <label class="form-label" for="firstname">Prénom :</label>
@@ -44,12 +59,12 @@
               <label class="form-label" for="departement">Département :</label>
               <select class="form-input" name="departement" id="departement">
                 <option value="">Entrez votre département...</option>
-                <option value="974">974-La Réunion</option>
-                <option value="91">91-Essonne</option>
-                <option value="78">78-Yvelines</option>
                 <option value="31">31-Toulouse</option>
-                <option value="2A">2A-Corse du Sud</option>
                 <option value="75">75-Paris</option>
+                <option value="78">78-Yvelines</option>
+                <option value="91">91-Essonne</option>
+                <option value="2A">2A-Corse du Sud</option>
+                <option value="974">974-La Réunion</option>
               </select>
             </div>
 
@@ -73,7 +88,7 @@
             <div class="block">
               <label class="form-label" for="sportCategory">Quel est votre sport ?</label>
               <select class="form-input" name="sportCategory" id="sportCategory">
-                <option value="">Choisir...</option>
+                <option value="">Choisir un sport...</option>
                 <option value="hockey">Hockey</option>
                 <option value="football">Football</option>
                 <option value="baseball">Baseball</option>

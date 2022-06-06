@@ -9,18 +9,18 @@
 <?php include('./shared/head.php') ?>
 <body>
 
+  <div class="container">
   <!-- HEADER -->
   <?php
   include('./shared/header.php');
   include('./shared/navbar.php');
   ?>
 
-  <div class="login-container">
     <!-- Liste des sports existants dans la base à afficher -->
     <!-- ??????????????????????????????????????? -->
 
     <!-- Formulaire d'identification -->
-    <form class="login-form" action="" method="POST">
+    <form class="login-form form" action="" method="POST">
       <h3 class="form-title">-Identifiez-vous-</h3>
       <div class="form-fields">
         <label class="form-label" for="email">Votre email :</label>
@@ -31,10 +31,10 @@
       </div>
     </form>
 
-  </div>
+    <!-- FOOTER -->
+    <?php include('./shared/footer.php'); ?>
 
-  <!-- FOOTER -->
-  <?php include('./shared/footer.php'); ?>
+  </div>
   
 </body>
 </html>

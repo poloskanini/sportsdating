@@ -16,8 +16,6 @@
   include('./shared/navbar.php');
   ?>
 
-<h2 class="page-title">Recherche</h2>
-
   <!-- FOOTER -->
   <?php include('./shared/footer.php'); ?>
 

@@ -15,7 +15,9 @@ body, html {
 
 body {
   text-align: center;
+  min-height: 100%;
   background-color: #000;
+  position: relative;
 }
 
 header,
@@ -33,6 +35,20 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: .8rem;
 }
 
 header {
@@ -54,37 +70,30 @@ nav {
   background-color: #000;
 }
 
-.page-title {
+.nav-item {
   color: #FFF;
   margin: .6em 0;
-  font-size: clamp(0.8rem, 0.7vw, 2.6rem);
+  font-size: clamp(0.8rem, 0.7vw, 2rem);
 }
 
 .page-title-active {
   font-size: clamp(1.5rem, 0.7vw, 2.6rem);
+  padding: 1rem;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: .8rem;
-}
-
-.login-container {
-  min-height: 70%;
+.container {
+  min-height: 100%;
   position: relative;
   background-image: url(../assets/132330196_m.jpg);
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
+}
+
+.login-form,
+.inscription-wrapper {
+  -webkit-box-shadow: 0 1px 1px black, 0 2px 2px black;
+  box-shadow: 0 1px 1px black, 0 2px 2px black;
 }
 
 .login-form {
@@ -126,9 +135,7 @@ footer {
 }
 
 .form-input {
-  -webkit-appearance: none;
   width: 100%;
-  max-width: 425px;
   min-height: calc(0.9em + (0.8em *2)+ 0.6em);
   padding: 0.8em;
   font-size: 0.9em;
@@ -136,7 +143,7 @@ footer {
   outline: none;
   border: 1px solid #ddd;
   border-radius: 4px;
-  background-color: #f9f9f9;
+  background-color: #FFF;
   -webkit-transition: background-color 0.25s, border-color 0.25s, color 0.25s;
   transition: background-color 0.25s, border-color 0.25s, color 0.25s;
 }
@@ -189,10 +196,31 @@ footer {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #FFF;
+  border-bottom: 2px solid #FFF;
+}
+
+.gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.miss, .mister {
+  padding: .5rem;
 }
 
 .block {
@@ -203,6 +231,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 1rem;
 }
 
 .inscription-container {
@@ -210,24 +239,39 @@ footer {
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
-  min-height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: ce;
+      -ms-flex-align: ce;
+          align-items: ce;
 }
 
 .inscription-wrapper {
   background-color: rgba(255, 255, 255, 0.9);
+  margin: 7rem;
+  padding: 0 0 2rem;
 }
 
 .form-fields-inscription .form-title {
   margin: 2rem 0 0;
+}
+
+@media screen and (max-width: 800px) {
+  .form-fields-block {
+    display: block;
+  }
+  .inscription-wrapper {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 2rem;
+    padding: 0 0 6rem;
+  }
+  .btn-green {
+    width: 50%;
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

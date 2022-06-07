@@ -1,6 +1,6 @@
 <nav>
   <a href="index.php">
-    <p class="nav-item"><i class="fa-solid fa-house"></i> Page d'accueil</p>
+    <p class="nav-item"><i class="fa-solid fa-house"></i> Accueil</p>
   </a>
   <a href="inscription.php">
     <p class="nav-item">Inscription</p>

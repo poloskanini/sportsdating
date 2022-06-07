@@ -66,6 +66,9 @@ nav {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px solid white;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -73,8 +76,14 @@ nav {
 .nav-item {
   color: #FFF;
   margin: .6em 0;
-  font-size: clamp(0.8rem, 0.7vw, 2rem);
-  padding: 1rem;
+  font-size: clamp(0.8rem, 0.9vw, 2rem);
+  padding: 1.5rem 1rem;
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+.nav-item:hover {
+  color: #989bff;
 }
 
 .page-title-active {
@@ -92,7 +101,7 @@ nav {
 }
 
 .login-form,
-.inscription-wrapper {
+.wrapper {
   -webkit-box-shadow: 0 1px 1px black, 0 2px 2px black;
   box-shadow: 0 1px 1px black, 0 2px 2px black;
 }
@@ -170,19 +179,19 @@ nav {
   font-family: 'Graduate';
   font-size: 1rem;
   padding: 10px 16px;
-  margin: 10px 0;
+  margin: 1rem 0;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .btn:hover {
-  background-position: 200px 0;
+  background-position: 400px 0;
   color: #FFF;
 }
 
 .btn-blue {
   background: -webkit-linear-gradient(0deg, transparent 50%, #1419b6 50%);
-  background-size: 400px 80px;
+  background-size: 800px 80px;
   border: 2px solid #1419b6;
   color: #1419b6;
   -webkit-transition: background-position 0.3s;
@@ -191,17 +200,18 @@ nav {
 
 .btn-green {
   background: -webkit-linear-gradient(0deg, transparent 50%, #4d8e18 50%);
-  background-size: 400px 80px;
+  background-size: 800px 80px;
   border: 2px solid #4d8e18;
   color: #4d8e18;
   -webkit-transition: background-position 0.3s;
   transition: background-position 0.3s;
+  margin-top: 1rem;
 }
 
 .btn-red {
   background-color: #8e3218;
   background: -webkit-linear-gradient(0deg, transparent 50%, #8e3218 50%);
-  background-size: 400px 80px;
+  background-size: 800px 80px;
   border: 2px solid #8e3218;
   color: #8e3218;
   -webkit-transition: background-position 0.3s;
@@ -271,21 +281,54 @@ nav {
           align-items: ce;
 }
 
-.inscription-wrapper {
+.wrapper {
   background-color: rgba(255, 255, 255, 0.9);
   margin: 7rem;
-  padding: 0 0 2rem;
 }
 
-.form-fields-inscription .form-title {
+.form-fields .form-title {
   margin: 2rem 0 0;
+}
+
+.results-wrapper {
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.result-player {
+  min-width: 100px;
+  min-height: 200px;
+  width: 180px;
+  border-radius: 5px;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  font-family: 'sans serif';
+  background-color: #FFF;
+  -webkit-box-shadow: 0 1px 1px black, 0 2px 2px black;
+  box-shadow: 0 0px 1px black, 1px 1px 2px black;
 }
 
 @media screen and (max-width: 800px) {
   .form-fields-block {
     display: block;
   }
-  .inscription-wrapper {
+  .wrapper {
     background-color: rgba(255, 255, 255, 0.9);
     margin: 2rem;
     padding: 0 0 6rem;
@@ -293,6 +336,7 @@ nav {
   .btn-green {
     width: 50%;
     margin: auto;
+    margin-top: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

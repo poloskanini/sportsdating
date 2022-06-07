@@ -10,25 +10,26 @@
 <body>
 
   <div class="container">
-  <!-- HEADER -->
-  <?php
-  include('./shared/header.php');
-  include('./shared/navbar.php');
-  ?>
 
+    <!-- HEADER -->
+    <?php
+    include('./shared/header.php');
+    include('./shared/navbar.php');
+    ?>
 
-    <div class="inscription-wrapper">
+    <div class="wrapper">
+      <!-- Page title -->
       <h2 class="page-title-active">Inscription</h2>
 
       <form class="inscription-form form" action="inscription.php" method="POST">
 
         <!-- Form Fields Inscription -->
-        <div class="form-fields-inscription">
+        <div class="form-fields">
 
-          <!-- Civilité -->
+          <!-- Form Title -->
           <h3 class="form-title">-Civilité-</h3>
 
-          <div class="form-fields-block form-fields-civility">
+          <div class="form-fields-block ">
 
             <!-- Gender -->
             <div class="gender">
@@ -82,7 +83,7 @@
 
           <!-- Sports -->
           <h3 class="form-title">-Sports-</h3>
-          <div class="form-fields-block form-fields-civility">
+          <div class="form-fields-block">
 
             <!-- Choose sport -->
             <div class="block">
@@ -122,18 +123,16 @@
 
         <!-- Reinitialiser / Valider -->
         <div class="form-fields-inscription">
-
           <button class="btn btn-red" type="submit">Réinitialiser</button>
           <button class="btn btn-blue" type="submit">Valider</button>
-        
         </div>
-
 
       </form>
     </div>
 
     <!-- FOOTER -->
     <?php include('./shared/footer.php'); ?>
+    
   </div>
 
   

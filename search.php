@@ -12,10 +12,7 @@
   <div class="container">
 
     <!-- HEADER -->
-    <?php
-    include('./shared/header.php');
-    include('./shared/navbar.php');
-    ?>
+    <?php include('./shared/header.php'); ?>
 
     <div class="wrapper search-wrapper">
 
@@ -23,12 +20,13 @@
 
         <!-- Page title -->
         <h2 class="page-title-active">
-          Recherche <i class="search-icon fa fa-search text-lg text-white cursor-pointer p-4 rounded-md font-medium transition duration-300 ease-in-out"></i>
+          <i class="search-icon fa fa-search text-lg text-white cursor-pointer p-4 rounded-md font-medium transition duration-300 ease-in-out"></i>
+          Recherche 
         </h2>
 
         <!-- Form Fields Inscription -->
         <div class="form-fields">
-          
+
           <div class="form-fields-block ">
 
             <!-- Choose sport -->

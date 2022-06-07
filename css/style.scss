@@ -33,6 +33,11 @@ footer {
   padding: 1rem 0 0;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -44,6 +49,7 @@ footer {
 
 header {
   font-size: clamp(1.6rem, 4vw, 3rem);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .header-title-link {
@@ -56,7 +62,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid white;
-  background-color: rgba(0, 0, 0, 0.8);
+  width: 80%;
+  padding: 0 12rem;
 }
 
 .nav-item {
@@ -73,6 +80,10 @@ nav {
 
 .nav-item:hover {
   color: #6d72f4;
+}
+
+.active {
+  color: yellow;
 }
 
 .page-title-active {
@@ -155,8 +166,8 @@ form {
   font-weight: bold;
   font-family: 'Graduate';
   font-size: 1rem;
-  padding: 10px 16px;
-  margin: 1rem 0;
+  padding: 1rem;
+  margin: .8rem 0;
   border-radius: 5px;
   cursor: pointer;
 }

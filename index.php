@@ -12,10 +12,7 @@
 <div class="container">
 
 <!-- HEADER -->
-<?php
-include('./shared/header.php');
-include('./shared/navbar.php');
-?>
+<?php include('./shared/header.php'); ?>
 
 <div class="wrapper wrapper-login">
 
@@ -43,6 +40,6 @@ include('./shared/navbar.php');
 <?php include('./shared/footer.php'); ?>
 
 </div>
-  
+  <script src="script.js"></script>
 </body>
 </html>

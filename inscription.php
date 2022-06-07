@@ -11,16 +11,16 @@
 
   <div class="container">
     <!-- HEADER -->
-    <?php
-    include('./shared/header.php');
-    include('./shared/navbar.php');
-    ?>
+    <?php include('./shared/header.php'); ?>
 
     <div class="wrapper">
 
       <form class="inscription-form form" action="inscription.php" method="POST">
         <!-- Page title -->
-        <h2 class="page-title-active">Inscription</h2>
+        <h2 class="page-title-active">
+          <i class="fa fa-pencil-square" aria-hidden="true"></i>
+          Inscription
+        </h2>
 
         <!-- Form Fields Inscription -->
         <div class="form-fields">

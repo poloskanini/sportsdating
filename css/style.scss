@@ -90,18 +90,21 @@ nav {
   background-repeat: no-repeat;
 }
 
-.wrapper-login {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.wrapper {
+  margin: 7rem;
+  height: 100%;
 }
 
-.login-form,
-.wrapper {
-  -webkit-box-shadow: 0 1px 1px rgb(0, 0, 0 / 15%), 0 2px 2px rgb(0, 0, 0 / 15%);
-  box-shadow: 0 1px 1px rgb(0, 0, 0 / 15%), 0 2px 2px rgb(0, 0, 0 / 15%);
+.wrapper-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+form {
+  background-color:rgba(255, 255, 255, 0.9);
+}
+
 
 .login-form {
   width: 300px;
@@ -229,11 +232,6 @@ nav {
   align-items: ce;
 }
 
-.wrapper {
-  background-color:rgba(255, 255, 255, 0.9);
-  margin: 7rem;
-}
-
 // SEARCH
 
 .results-wrapper {
@@ -268,7 +266,6 @@ nav {
   }
 
   .wrapper {
-    background-color: rgba(255, 255, 255, 0.9);
     margin: 2rem;
     padding: 0 0 6rem;
   }

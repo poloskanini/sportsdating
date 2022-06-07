@@ -10,7 +10,6 @@
 <body>
 
   <div class="container">
-
     <!-- HEADER -->
     <?php
     include('./shared/header.php');
@@ -18,10 +17,10 @@
     ?>
 
     <div class="wrapper">
-      <!-- Page title -->
-      <h2 class="page-title-active">Inscription</h2>
 
       <form class="inscription-form form" action="inscription.php" method="POST">
+        <!-- Page title -->
+        <h2 class="page-title-active">Inscription</h2>
 
         <!-- Form Fields Inscription -->
         <div class="form-fields">
@@ -55,6 +54,12 @@
               <input class="form-input" type="text" name="lastname" id="lastname" placeholder="Nom">
             </div>
 
+            <!-- Email -->
+            <div class="block">
+              <label class="form-label" for="email">Email :</label>
+              <input class="form-input" type="email" name="email" id="email" placeholder="Email">
+            </div>
+
             <!-- Departement -->
             <div class="block">
               <label class="form-label" for="departement">Département :</label>
@@ -67,12 +72,6 @@
                 <option value="2A">2A-Corse du Sud</option>
                 <option value="974">974-La Réunion</option>
               </select>
-            </div>
-
-            <!-- Email -->
-            <div class="block">
-              <label class="form-label" for="email">Email :</label>
-              <input class="form-input" type="email" name="email" id="email" placeholder="Email">
             </div>
            
           </div>
@@ -132,7 +131,6 @@
 
     <!-- FOOTER -->
     <?php include('./shared/footer.php'); ?>
-    
   </div>
 
   

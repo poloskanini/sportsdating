@@ -9,34 +9,40 @@
 <?php include('./shared/head.php') ?>
 <body>
 
-  <div class="container">
-  <!-- HEADER -->
-  <?php
-  include('./shared/header.php');
-  include('./shared/navbar.php');
-  ?>
+<div class="container">
 
-  <div class="wrapper-login">
+<!-- HEADER -->
+<?php
+include('./shared/header.php');
+include('./shared/navbar.php');
+?>
 
-     <!-- Formulaire d'identification -->
-     <form class="login-form form" action="" method="POST">
+<div class="wrapper wrapper-login">
+
+  <!-- Formulaire d'identification -->
+  <form class="login-form form" action="" method="POST">
+     <!-- Page title -->
+     <h2 class="page-title-active"><i class="fa-solid fa-house"></i> Accueil</h2>
+    <div class="form-wrapper">
       <h3 class="form-title">-Identifiez-vous-</h3>
-      <div class="form-fields">
-        <label class="form-label" for="email">Votre email :</label>
-        <input class="form-input" type="text" name="email" id="email" placeholder="Entrez votre email">
+        <div class="form-fields">
+          <label class="form-label" for="email">Votre email :</label>
+          <input class="form-input" type="text" name="email" id="email" placeholder="Entrez votre email">
 
-        <!-- Button Validate -->
-        <button class="btn btn-blue" type="submit">Valider</button>
-        <a class="form-inscription-link" href="inscription.php">Pas encore inscrit ?</a>
-      </div>
-    </form>
+          <!-- Button Validate -->
+          <button class="btn btn-blue" type="submit">Valider</button>
+          <a class="form-inscription-link" href="inscription.php">Pas encore inscrit ?</a>
+        </div>
+    </div>
+      
+  </form>
 
-  </div>
+</div>
 
-    <!-- FOOTER -->
-    <?php include('./shared/footer.php'); ?>
+<!-- FOOTER -->
+<?php include('./shared/footer.php'); ?>
 
-  </div>
+</div>
   
 </body>
 </html>

@@ -16,11 +16,10 @@
   include('./shared/navbar.php');
   ?>
 
-    <!-- Liste des sports existants dans la base à afficher -->
-    <!-- ??????????????????????????????????????? -->
+  <div class="wrapper-login">
 
-    <!-- Formulaire d'identification -->
-    <form class="login-form form" action="" method="POST">
+     <!-- Formulaire d'identification -->
+     <form class="login-form form" action="" method="POST">
       <h3 class="form-title">-Identifiez-vous-</h3>
       <div class="form-fields">
         <label class="form-label" for="email">Votre email :</label>
@@ -31,6 +30,8 @@
         <a class="form-inscription-link" href="inscription.php">Pas encore inscrit ?</a>
       </div>
     </form>
+
+  </div>
 
     <!-- FOOTER -->
     <?php include('./shared/footer.php'); ?>

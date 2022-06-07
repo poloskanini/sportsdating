@@ -76,14 +76,18 @@ nav {
 .nav-item {
   color: #FFF;
   margin: .6em 0;
-  font-size: clamp(0.8rem, 0.9vw, 2rem);
+  font-size: clamp(0.8rem, 0.8vw, 2rem);
   padding: 1.5rem 1rem;
-  -webkit-transition: color .3s ease-in-out;
-  transition: color .3s ease-in-out;
+  -webkit-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+}
+
+.nav-link {
+  text-decoration: none;
 }
 
 .nav-item:hover {
-  color: #989bff;
+  color: #6d72f4;
 }
 
 .page-title-active {
@@ -100,6 +104,14 @@ nav {
   background-repeat: no-repeat;
 }
 
+.wrapper-login {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .login-form,
 .wrapper {
   -webkit-box-shadow: 0 1px 1px black, 0 2px 2px black;
@@ -107,11 +119,6 @@ nav {
 }
 
 .login-form {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   width: 300px;
   max-width: 400px;
   border-radius: 3px;
@@ -121,6 +128,7 @@ nav {
 
 .form-title {
   font-size: 1.2em;
+  margin: 1rem 0;
 }
 
 .form-fields {
@@ -284,10 +292,6 @@ nav {
 .wrapper {
   background-color: rgba(255, 255, 255, 0.9);
   margin: 7rem;
-}
-
-.form-fields .form-title {
-  margin: 2rem 0 0;
 }
 
 .results-wrapper {

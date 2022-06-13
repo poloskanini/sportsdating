@@ -1,7 +1,7 @@
 <?php 
   // On appelle la connexion à la BDD
   require_once('initialize.php');
-  if($database = connexion('dating', 'params'));
+  if($database = connexion('dating','params'));
 ?>
 
 <!DOCTYPE html>

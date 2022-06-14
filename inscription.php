@@ -1,7 +1,8 @@
 <?php 
+require('initialize.php');
+
   // On appelle la connexion à la BDD
-  require_once('initialize.php');
-  if($database = connexion('dating', 'params'));
+  // require_once('initialize.php');
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +16,7 @@
 
     <div class="wrapper">
 
-      <form class="inscription-form form" action="inscription.php" method="POST">
+      <form class="inscription-form form" action="inscription.php" method="post">
         <!-- Page title -->
         <h2 class="page-title-active">
           <i class="fa fa-pencil-square" aria-hidden="true"></i>
@@ -33,7 +34,7 @@
             <!-- Gender -->
             <div class="gender">
               <div class="miss">
-                <input type="radio" id="miss" name="gender" value="Mme">
+                <input type="radio" id="miss" name="gender" value="Mme" checked>
                 <label for="huey">Mme</label>
               </div>
               <div class="mister">
@@ -101,7 +102,7 @@
             <div class="block">
               <label class="form-label" for="newsport">Ajouter un sport :</label>
               <input class="form-input" type="text" name="newsport" id="newsport" placeholder="Nouveau sport">
-              <button class="btn btn-green" type="submit">Ajouter</button>
+              <input class="btn btn-green" type="submit" name="ajouter" value="ajouter">
             </div>
 
             <!-- Sport level -->
@@ -123,10 +124,46 @@
         <!-- Reinitialiser / Valider -->
         <div class="form-fields-inscription">
           <button class="btn btn-red" type="submit">Réinitialiser</button>
-          <button class="btn btn-blue" type="submit">Valider</button>
+          <input class="btn btn-blue" type="submit" name="valider" value="valider">
         </div>
 
       </form>
+
+      <!-- PHP -->
+      <?php
+        // Insérer datas dans la table Personne
+
+        if(isset($_POST['valider']))
+        {         
+          $prenom = $_POST['firstname'];
+          $nom = $_POST['lastname'];
+          $email = $_POST['email'];
+          $departement = $_POST['departement'];
+          $gender = $_POST['gender'];
+          
+          $r_personne = "INSERT INTO personne (id, nom, prenom, departement, email, sexe) VALUES 
+          (NULL, '$nom', '$prenom', '$departement', '$email', '$gender')";
+
+          // On pousse la requête
+          $connexion->query($r_personne);
+          $connexion = null;
+        }
+
+
+        if(isset($_POST['ajouter']))
+        {
+          //FIXME:
+          $sport = $_POST['newsport'];
+          $r_sport = "INSERT INTO sport (id, nom) VALUES (NULL, '$sport')";
+          if($connexion->query($r_sport))
+          {
+            echo '<div> Data dans table sport </div>';
+            $connexion = null;
+
+          }
+        }
+      
+      ?>
     </div>
 
     <!-- FOOTER -->

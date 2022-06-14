@@ -1,7 +1,6 @@
 <?php 
   // On appelle la connexion à la BDD
   require_once('initialize.php');
-  if($database = connexion('dating', 'params'));
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +30,7 @@
 
             <!-- Choose sport -->
             <div class="block">
-              <label class="form-label" for="sportCategory">Votre sport</label>
+              <label class="form-label" for="sportCategory">Votre sport :</label>
               <select class="form-input" name="sportCategory" id="sportCategory">
                 <option value="">Choisir un sport...</option>
                 <option value="hockey">Hockey</option>
@@ -78,7 +77,8 @@
         </div>
 
         <!-- Resultats -->
-        <div class="form-fields results">
+
+        <!-- <div class="form-fields results">
 
           <h3 class="form-title">-Résultats-</h3>
           <div class="form-fields-block"></div>
@@ -90,7 +90,8 @@
             <div class="result-player result-player4">?</div>
           </div>
 
-        </div>
+        </div> -->
+
       </form>
     </div>
 

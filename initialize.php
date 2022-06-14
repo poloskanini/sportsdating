@@ -1,17 +1,13 @@
 <?php
  
- function connexion($bdd, $params)
- {
-    include_once($params.'.php');
-    $connexion = "mysql:host=".HOST.";dbname=".$bdd;
+    require_once('params.php');
+
+    $connect = "mysql:host=".HOST.';dbname='.DB_HOST.'';
     try
     {
-      $dataBase = new PDO($connexion, USER, PASS);
-      // echo 'Success !!';
-      return $dataBase;
+      $connexion = new PDO($connect, USER, PASS);
+      return $connexion;
     }
     catch (PDOException $except)
     {
-      echo "Echec de la connexion", $except->getMessage();
-    }
-  }
+    };

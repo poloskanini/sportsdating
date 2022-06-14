@@ -17,8 +17,12 @@ body, html {
 body {
   text-align: center;
   min-height: 100%;
-  background-color: #000;
+  background-color: rgb(255, 255, 255);
   position: relative;
+  background-image: url(../assets/132330196_m.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 //HEADER & FOOTER
@@ -95,7 +99,6 @@ nav {
 .container {
   min-height: 100%;
   position: relative;
-  background-image: url(../assets/132330196_m.jpg);
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -234,13 +237,12 @@ form {
 }
 
 .inscription-container {
-  background-image: url(../assets/132330196_m.jpg);
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  align-items: ce;
+  align-items: center;
 }
 
 // SEARCH

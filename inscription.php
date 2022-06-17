@@ -1,5 +1,6 @@
 <?php 
 require('initialize.php');
+include('addUser.php');
 
   // On appelle la connexion à la BDD
   // require_once('initialize.php');
@@ -100,9 +101,9 @@ require('initialize.php');
 
             <!-- Add new sport -->
             <div class="block">
-              <label class="form-label" for="newsport">Ajouter un sport :</label>
-              <input class="form-input" type="text" name="newsport" id="newsport" placeholder="Nouveau sport">
-              <input class="btn btn-green" type="submit" name="ajouter" value="ajouter">
+              <label class="form-label" for="newSport">Ajouter un sport :</label>
+              <input class="form-input" type="text" name="newSport" id="newSport" placeholder="Nouveau sport">
+              <input class="btn btn-green" type="submit" name="valider" value="Ajouter Sport">
             </div>
 
             <!-- Sport level -->
@@ -130,40 +131,8 @@ require('initialize.php');
       </form>
 
       <!-- PHP -->
-      <?php
-        // Insérer datas dans la table Personne
-
-        if(isset($_POST['valider']))
-        {         
-          $prenom = $_POST['firstname'];
-          $nom = $_POST['lastname'];
-          $email = $_POST['email'];
-          $departement = $_POST['departement'];
-          $gender = $_POST['gender'];
-          
-          $r_personne = "INSERT INTO personne (id, nom, prenom, departement, email, sexe) VALUES 
-          (NULL, '$nom', '$prenom', '$departement', '$email', '$gender')";
-
-          // On pousse la requête
-          $connexion->query($r_personne);
-          $connexion = null;
-        }
 
 
-        if(isset($_POST['ajouter']))
-        {
-          //FIXME:
-          $sport = $_POST['newsport'];
-          $r_sport = "INSERT INTO sport (id, nom) VALUES (NULL, '$sport')";
-          if($connexion->query($r_sport))
-          {
-            echo '<div> Data dans table sport </div>';
-            $connexion = null;
-
-          }
-        }
-      
-      ?>
     </div>
 
     <!-- FOOTER -->
